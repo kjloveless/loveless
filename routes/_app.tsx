@@ -10,7 +10,14 @@ export default function App({ Component }: PageProps) {
       </head>
       <body>
         <div class="px-4 py-8 mx-auto bg-[#86efac]">
-          <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+          <nav>
+            <ol>
+              <li class="crumb"><a href="/">loveless</a></li>
+            </ol>
+          </nav>
+
+        </div>
+        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
             <img
               class="my-6"
               src="/logo.svg"
@@ -18,10 +25,9 @@ export default function App({ Component }: PageProps) {
               height="128"
               alt="the Fresh logo: a sliced lemon dripping with juice"
             />
-            <h1 class="text-4xl font-bold">damnloveless</h1>
+            <h1 class="text-4xl font-bold">Kyle Lovless</h1>
             <Component />
           </div>
-        </div>
       </body>
     </html>
   );
