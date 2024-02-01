@@ -12,6 +12,7 @@ function onYouTubeIframeAPIReady(){
   
   const toggleButton = function(play){
     icon.setAttribute("src","/logo.svg")
+    icon.setAttribute("alt", "fresh icon to play/pause audio")
   };
 
   ctrlq.onclick=function(){

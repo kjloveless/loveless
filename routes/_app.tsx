@@ -3,7 +3,7 @@ import Header from "../components/Header.tsx";
 
 export default function App({ Component, route }: PageProps) {
   return (
-    <html>
+    <html lang="en-US">
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
