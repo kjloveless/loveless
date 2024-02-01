@@ -33,7 +33,7 @@ function onYouTubeIframeAPIReady(){
         toggleButton(player.getPlayerState()!==YT.PlayerState.CUED)
       },
       onStateChange:function(e){
-        ctrlq.data===YT.PlayerState.ENDED&&o(!1)
+        ctrlq.data===YT.PlayerState.ENDED&&toggleButton(!1)
       }
     }
   })
