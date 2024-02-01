@@ -9,13 +9,13 @@ export const handler: Handlers = {
     // ... do something here
   },
   //   async GET(req, ctx) {
-//     const value = await loadFooValue();
-//     return ctx.render({ foo: value });
-//   },
+  //     const value = await loadFooValue();
+  //     return ctx.render({ foo: value });
+  //   },
 };
 
 export default async function MyPage(req: Request, ctx: RouteContext) {
-  const value = await loadFoodValue();
+  const value = await loadFooValue();
 
   // Return 404 if `value` is null
   if (value === null) {
@@ -30,6 +30,6 @@ export default async function MyPage(req: Request, ctx: RouteContext) {
       headers,
     });
   }
-  
+
   return <p>foo is: {value}</p>;
 }

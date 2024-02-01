@@ -9,5 +9,5 @@ export const handler: Handlers = {
 };
 
 export default function Page(props: PageProps) {
-  return <div>You are on the page '{props.url.href}'.</div>
+  return <div>You are on the page '{props.url.href}'.</div>;
 }
