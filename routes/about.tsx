@@ -9,12 +9,13 @@ export const handler: Handlers = {
 };
 
 export default function AboutPage() {
-  const birthday = Temporal.PlainMonthDay.from("03-21");
+  const birthday = new Date(1994, 2, 21);
+  // const birthday = Temporal.PlainMonthDay.from("03-21");
   // const birthdayIn2030 = birthday.toPlainDate({ year: 1994 });
 
   return (
     <>
-      <h3 class="text-xl font-bold">{birthday.toString()}</h3>
+      <h3 class="text-xl font-bold">{birthday.toLocaleDateString()}</h3>
       {/* <p>This is the about page.</p> */}
     </>
   );
