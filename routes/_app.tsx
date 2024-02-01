@@ -1,4 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
+import Header from "../components/Header.tsx";
+
 export default function App({ Component }: PageProps) {
   return (
     <html>
@@ -9,15 +11,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <div class="px-4 py-8 mx-auto bg-[#86efac]">
-          <nav>
-            <ol>
-              <li class="crumb">
-                <a href="/">loveless</a>
-              </li>
-            </ol>
-          </nav>
-        </div>
+        <Header active="/" />
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <img
             class="my-6"
