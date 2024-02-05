@@ -27,7 +27,7 @@ export default function Header({ active }: Props) {
                 (menu.href === active ? " font-bold border-b-2" : "")}
             >
               {menu.name}
-            </a> 
+            </a>
           </li>
         ))}
       </ul>

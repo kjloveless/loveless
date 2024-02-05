@@ -14,7 +14,7 @@ export default function App({ Component, route }: PageProps) {
       <body class="bg-slate-600">
         <Header active={route} />
         <main class="flex flex-col items-center min-h-screen">
-          <div class="max-w-screen-md  mx-auto flex flex-col items-center justify-center">
+          <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
             <img
               class="my-6"
               src="/logo.svg"
