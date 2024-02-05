@@ -13,18 +13,20 @@ export default function App({ Component, route }: PageProps) {
       </head>
       <body class="bg-slate-600">
         <Header active={route} />
-        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center min-h-screen">
-          <img
-            class="my-6"
-            src="/logo.svg"
-            width="128"
-            height="128"
-            alt="the Fresh logo: a sliced lemon dripping with juice"
-          />
-          <h1 class="text-4xl font-bold">Kyle Loveless</h1>
-          <Component />
-        </div>
-        <Footer />
+        <main class="flex flex-col items-center min-h-screen">
+          <div class="max-w-screen-md  mx-auto flex flex-col items-center justify-center">
+            <img
+              class="my-6"
+              src="/logo.svg"
+              width="128"
+              height="128"
+              alt="the Fresh logo: a sliced lemon dripping with juice"
+            />
+            <h1 class="text-4xl font-bold">Kyle Loveless</h1>
+            <Component />
+          </div>
+          <Footer />
+        </main>
       </body>
     </html>
   );

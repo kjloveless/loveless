@@ -21,7 +21,7 @@ export default function Footer() {
   ];
 
   return (
-    <div class="bg-white flex flex-col sm:flex-row w-full max-w-screen-lg gap-8 sm:gap-16 px-8 py-8 bottom-0 text-sm">
+    <div class="bg-white flex flex-col sm:flex-row w-full sm:gap-16 p-4 mt-auto bottom-0 text-sm">
       <div class="flex-1">
         <div class="flex items-center gap-1">
           <HeartExclamationIcon class="inline-block" aria-hidden="true" />
