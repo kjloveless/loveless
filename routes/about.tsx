@@ -17,6 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <h3 class="text-xl font-bold">{birthday.toLocaleDateString()}</h3>
+      <p>Still working on some things... Visit again :)</p>
       <TicTacToe />
       {/* <p>This is the about page.</p> */}
     </>

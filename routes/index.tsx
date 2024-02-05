@@ -17,7 +17,7 @@ export default function Home({ data }: PageProps<Joke>) {
   return (
     <>
       <p>Welcome to my site. Look around!</p>
-      {data && <p class="flex items-center">{data}</p>}
+      {data && <p>{data}</p>}
       <div
         data-video="RW34u1KxGC4"
         data-autoplay="0"
