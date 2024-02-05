@@ -13,15 +13,15 @@ export default function Footer() {
     {
       title: "Social",
       children: [
-        { name: "discord", href: "#" },
-        { name: "bluesky", href: "#" },
+        { name: "discord", href: "https://discordapp.com/users/damnloveless" },
+        { name: "bluesky", href: "https://bsky.app/profile/loveless.dev" },
         { name: "instagram", href: "#" },
       ],
     },
   ];
 
   return (
-    <div class="bg-white flex flex-col sm:flex-row w-full sm:gap-16 p-4 mt-auto bottom-0 text-sm">
+    <div class="bg-white flex flex-col sm:flex-row w-full gap-8 sm:gap-16 p-8 mt-auto bottom-0 text-sm">
       <div class="flex-1">
         <div class="flex items-center gap-1">
           <HeartExclamationIcon class="inline-block" aria-hidden="true" />
