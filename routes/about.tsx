@@ -1,4 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
+import TicTacToe from "../islands/TicTacToe.tsx";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {
@@ -16,6 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <h3 class="text-xl font-bold">{birthday.toLocaleDateString()}</h3>
+      <TicTacToe />
       {/* <p>This is the about page.</p> */}
     </>
   );

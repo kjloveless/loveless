@@ -1,3 +1,5 @@
+// Initial code: https://www.labnol.org/internet/youtube-audio-player/26740/
+// https://developers.google.com/youtube/player_parameters
 function onYouTubeIframeAPIReady(){
   const ctrlq = document.getElementById("youtube-audio");
 
@@ -26,7 +28,7 @@ function onYouTubeIframeAPIReady(){
     videoId:ctrlq.dataset.video,
     playerVars:{
       autoplay:ctrlq.dataset.autoplay,
-      loop:ctrlq.dataset.loop
+      loop:ctrlq.dataset.loop,
     },
     events:{
       onReady:function(e){

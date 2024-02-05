@@ -18,6 +18,7 @@ import * as $search from "./routes/search.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Coutdown from "./islands/Coutdown.tsx";
 import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
+import * as $TicTacToe from "./islands/TicTacToe.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -40,6 +41,7 @@ const manifest = {
     "./islands/Counter.tsx": $Counter,
     "./islands/Coutdown.tsx": $Coutdown,
     "./islands/JSONFormatter.tsx": $JSONFormatter,
+    "./islands/TicTacToe.tsx": $TicTacToe,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
