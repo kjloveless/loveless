@@ -20,7 +20,7 @@ export default function AboutPage() {
       <h3 class="text-xl font-bold">{birthday.toLocaleDateString()}</h3>
       <p>Still working on some things... Visit again :)</p>
       {/* <TicTacToe /> */}
-      <div class="flex flex row">
+      <div class="flex flex-row">
         <Board />
       </div>
       {/* <p>This is the about page.</p> */}
