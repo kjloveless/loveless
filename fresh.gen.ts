@@ -14,6 +14,8 @@ import * as $html2 from "./routes/html2.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $page from "./routes/page.tsx";
 import * as $plain from "./routes/plain.tsx";
+import * as $posts_slug_ from "./routes/posts/[slug].tsx";
+import * as $posts_index from "./routes/posts/index.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $CounterButton from "./islands/CounterButton.tsx";
@@ -37,6 +39,8 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/page.tsx": $page,
     "./routes/plain.tsx": $plain,
+    "./routes/posts/[slug].tsx": $posts_slug_,
+    "./routes/posts/index.tsx": $posts_index,
     "./routes/search.tsx": $search,
   },
   islands: {
