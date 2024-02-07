@@ -16,9 +16,11 @@ import * as $page from "./routes/page.tsx";
 import * as $plain from "./routes/plain.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $CounterButton from "./islands/CounterButton.tsx";
 import * as $Coutdown from "./islands/Coutdown.tsx";
 import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
 import * as $TicTacToe from "./islands/TicTacToe.tsx";
+import * as $TicTacToe2 from "./islands/TicTacToe2.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -39,9 +41,11 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/CounterButton.tsx": $CounterButton,
     "./islands/Coutdown.tsx": $Coutdown,
     "./islands/JSONFormatter.tsx": $JSONFormatter,
     "./islands/TicTacToe.tsx": $TicTacToe,
+    "./islands/TicTacToe2.tsx": $TicTacToe2,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
