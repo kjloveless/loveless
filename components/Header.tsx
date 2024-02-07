@@ -8,6 +8,8 @@ export default function Header({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Posts", href: "/posts" },
+    { name: "Games", href: "/games" },
   ];
 
   return (
