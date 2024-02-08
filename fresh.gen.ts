@@ -19,12 +19,15 @@ import * as $posts_slug_ from "./routes/posts/[slug].tsx";
 import * as $posts_feed from "./routes/posts/feed.ts";
 import * as $posts_index from "./routes/posts/index.tsx";
 import * as $search from "./routes/search.tsx";
+import * as $todo_listId_ from "./routes/todo/[listId].tsx";
+import * as $todo_index from "./routes/todo/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $CounterButton from "./islands/CounterButton.tsx";
 import * as $Coutdown from "./islands/Coutdown.tsx";
 import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
 import * as $TicTacToe from "./islands/TicTacToe.tsx";
 import * as $TicTacToe2 from "./islands/TicTacToe2.tsx";
+import * as $TodoListView from "./islands/TodoListView.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -46,6 +49,8 @@ const manifest = {
     "./routes/posts/feed.ts": $posts_feed,
     "./routes/posts/index.tsx": $posts_index,
     "./routes/search.tsx": $search,
+    "./routes/todo/[listId].tsx": $todo_listId_,
+    "./routes/todo/index.tsx": $todo_index,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
@@ -54,6 +59,7 @@ const manifest = {
     "./islands/JSONFormatter.tsx": $JSONFormatter,
     "./islands/TicTacToe.tsx": $TicTacToe,
     "./islands/TicTacToe2.tsx": $TicTacToe2,
+    "./islands/TodoListView.tsx": $TodoListView,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
