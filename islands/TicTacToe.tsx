@@ -1,40 +1,44 @@
 import { Signal, useSignal } from "@preact/signals";
 
-class Move{
+class Move {
   X: number;
   Y: number;
   // MoveIndex: number;
 
-  constructor(X: number, Y: number)
-  {
+  constructor(X: number, Y: number) {
     this.X = X;
     this.Y = Y;
   }
-};
+}
 
 type PlayMove = {
   value: string;
-}
+};
 
 const Square = () => {
   const value: Signal<string> = useSignal("");
 
   function handleClick() {
-    value.value = 'X';
+    value.value = "X";
   }
 
-  return <div 
-    onClick={handleClick}
-    style={{
-      background: "#fff",
-      border: "1px solid #999",
-      float: "left",
-      padding: 0,
-      height: "34px",
-      width: "34px",
-      textAlign: "center",
-  }}>{value}</div>
-}
+  return (
+    <div
+      onClick={handleClick}
+      style={{
+        background: "#fff",
+        border: "1px solid #999",
+        float: "left",
+        padding: 0,
+        height: "34px",
+        width: "34px",
+        textAlign: "center",
+      }}
+    >
+      {value}
+    </div>
+  );
+};
 
 const Gameboard = () => {
   return (

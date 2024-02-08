@@ -1,5 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
-import Board from "@/islands/TicTacToe2.tsx"
+import Board from "@/islands/TicTacToe2.tsx";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {
