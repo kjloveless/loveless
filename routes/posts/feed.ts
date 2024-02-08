@@ -24,11 +24,11 @@ export const handler: Handlers<Post[]> = {
 
     posts.map((post) => {
       const item: FeedItem = {
-        id: `${origin}/${post.title}`,
+        id: `${origin}/posts/${post.title}`,
         title: post.title,
         description: post.snippet,
         date: post.publishedAt,
-        link: `${origin}/${post.slug}`,
+        link: `${origin}/posts/${post.slug}`,
         copyright,
         published: post.publishedAt,
       };
