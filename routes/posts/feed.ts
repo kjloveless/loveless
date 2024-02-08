@@ -11,8 +11,8 @@ export const handler: Handlers<Post[]> = {
     const feed = new Feed({
       title: "Posts",
       description: "a stream of bytes",
-      id: `${origin}/posts/feed`,
-      link: `${origin}/posts/feed`,
+      id: `${origin}/posts`,
+      link: `${origin}/posts`,
       language: "en",
       favicon: `${origin}/favicon.ico`,
       copyright: copyright,
