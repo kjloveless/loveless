@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 
-const NAMES = ["Alice", "Bob", "Charlie", "Dave", "Eve", "Frank"];
+const NAMES = ["Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"];
 
 interface Data {
   results: string[];
