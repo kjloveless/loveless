@@ -7,25 +7,17 @@ import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_random_uuid from "./routes/api/random-uuid.ts";
-import * as $countdown from "./routes/countdown.tsx";
 import * as $games_index from "./routes/games/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
-import * as $html from "./routes/html.tsx";
-import * as $html2 from "./routes/html2.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $page from "./routes/page.tsx";
-import * as $plain from "./routes/plain.tsx";
 import * as $posts_slug_ from "./routes/posts/[slug].tsx";
 import * as $posts_feed from "./routes/posts/feed.ts";
 import * as $posts_index from "./routes/posts/index.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $todo_listId_ from "./routes/todo/[listId].tsx";
 import * as $todo_index from "./routes/todo/index.tsx";
-import * as $Counter from "./islands/Counter.tsx";
-import * as $CounterButton from "./islands/CounterButton.tsx";
 import * as $Coutdown from "./islands/Coutdown.tsx";
 import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
-import * as $TicTacToe from "./islands/TicTacToe.tsx";
 import * as $TicTacToe2 from "./islands/TicTacToe2.tsx";
 import * as $TodoListView from "./islands/TodoListView.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -37,14 +29,9 @@ const manifest = {
     "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
     "./routes/api/random-uuid.ts": $api_random_uuid,
-    "./routes/countdown.tsx": $countdown,
     "./routes/games/index.tsx": $games_index,
     "./routes/greet/[name].tsx": $greet_name_,
-    "./routes/html.tsx": $html,
-    "./routes/html2.tsx": $html2,
     "./routes/index.tsx": $index,
-    "./routes/page.tsx": $page,
-    "./routes/plain.tsx": $plain,
     "./routes/posts/[slug].tsx": $posts_slug_,
     "./routes/posts/feed.ts": $posts_feed,
     "./routes/posts/index.tsx": $posts_index,
@@ -53,11 +40,8 @@ const manifest = {
     "./routes/todo/index.tsx": $todo_index,
   },
   islands: {
-    "./islands/Counter.tsx": $Counter,
-    "./islands/CounterButton.tsx": $CounterButton,
     "./islands/Coutdown.tsx": $Coutdown,
     "./islands/JSONFormatter.tsx": $JSONFormatter,
-    "./islands/TicTacToe.tsx": $TicTacToe,
     "./islands/TicTacToe2.tsx": $TicTacToe2,
     "./islands/TodoListView.tsx": $TodoListView,
   },
