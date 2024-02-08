@@ -11,14 +11,14 @@ export const handler: Handlers<Post[]> = {
     const feed = new Feed({
       title: "Posts",
       description: "a stream of bytes",
-      id: `${origin}/posts`,
-      link: `${origin}/posts`,
+      id: `${origin}/posts/feed`,
+      link: `${origin}/posts/feed`,
       language: "en",
       favicon: `${origin}/favicon.ico`,
       copyright: copyright,
       generator: "Feed (https://github.com/jpmonette/feed) for loveless",
       feedLinks: {
-        atom: `${origin}/feed`,
+        atom: `${origin}/posts/feed`,
       },
     });
 
