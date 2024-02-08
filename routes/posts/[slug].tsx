@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPost, Post } from "@/utils/posts.ts";
+import { getPost, Post } from "@/shared/posts.ts";
 import { CSS, render } from "$gfm";
 import { Head } from "$fresh/runtime.ts";
 
