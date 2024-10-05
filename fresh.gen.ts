@@ -20,7 +20,7 @@ import * as $Coutdown from "./islands/Coutdown.tsx";
 import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
 import * as $TicTacToe2 from "./islands/TicTacToe2.tsx";
 import * as $TodoListView from "./islands/TodoListView.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
