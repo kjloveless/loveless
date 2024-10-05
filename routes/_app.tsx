@@ -25,9 +25,9 @@ export default function App({ Component, route }: PageProps) {
             <h1 class="text-4xl font-bold">Kyle Loveless</h1>
             <Component />
           </div>
-          <Footer />
         </main>
       </body>
+      <Footer />
     </html>
   );
 }
