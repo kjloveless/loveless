@@ -11,7 +11,10 @@ export interface Post {
 
 export async function getPost(slug: string): Promise<Post | null> {
   const text = await Deno.readTextFile(join("./static/posts", `${slug}.md`));
-  const { attrs, body }: { attrs: { title: string, published_at: Date, snippet: string }, body: string } = extract(text);
+  const { attrs, body }: {
+    attrs: { title: string; published_at: Date; snippet: string };
+    body: string;
+  } = extract(text);
   return {
     slug,
     title: attrs.title,
