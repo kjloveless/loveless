@@ -16,7 +16,7 @@ export default function Footer() {
       title: "Social",
       children: [
         { name: "discord", href: "https://discordapp.com/users/damnloveless" },
-        { name: "bluesky", href: "https://bsky.app/profile/loveless.dev" },
+        { name: "bluesky", href: "https://bsky.app/profile/did:plc:zjgxnvy4b55v4ovuaqxa2qgy" },
         { name: "instagram", href: "#" },
       ],
     },
