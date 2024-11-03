@@ -5,6 +5,10 @@ export const SiteConfig = {
       title: "Home",
       "href": "/",
     },
+    {
+      title: "About",
+      "href": "/about",
+    },
   ],
   links: {
     github: "https://github.com/kjloveless/",
