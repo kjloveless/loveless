@@ -10,7 +10,7 @@ export default function Link(
   ) {
     const { domain, subdomain } = getDomain(globalThis.location?.hostname);
     if (subdomain) {
-      return <a href={`https://${subdomain}.${domain}`} {...props} />;
+      return <a href={`https://${subdomain}.${domain}${href}`} {...props} />;
     }
   }
 
