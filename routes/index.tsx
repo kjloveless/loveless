@@ -1,23 +1,20 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { handler as jokeHandler } from "./api/joke.ts";
+import { useSignal } from "@preact/signals";
+import Counter from "../islands/Counter.tsx";
+import { TbHeartBroken, TbTheater } from "@preact-icons/tb";
 
-interface Joke {
-  text: string;
-}
+import Theater from "../islands/Theater.tsx";
 
-export const handler: Handlers = {
-  async GET(req, ctx) {
-    const res = await jokeHandler(req, ctx);
-    const joke = await res.text();
-    return ctx.render(joke);
-  },
-};
+export default function Home() {
+  const count = useSignal(3);
 
-export default function Home({ data }: PageProps<Joke>) {
   return (
-    <>
-      <p>Welcome to my site. Look around!</p>
-      {data && <p>{data}</p>}
-    </>
+    <div class="px-4 py-8 mx-auto">
+      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+        <TbHeartBroken className={"size-16"} />
+        <h1 class="text-4xl font-bold">welcome to my site, look around</h1>
+        {/* <Counter count={count} /> */}
+        <Theater />
+      </div>
+    </div>
   );
 }

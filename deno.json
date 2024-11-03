@@ -4,29 +4,46 @@
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
     "manifest": "deno task cli manifest $(pwd)",
-    "start": "deno run -A --unstable-kv --watch=static/,routes/ dev.ts",
-    "build": "deno run -A --unstable-kv dev.ts build",
+    "start": "deno run -A --watch=static/,routes/ dev.ts",
+    "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
-  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
-  "exclude": ["**/_fresh/*"],
+  "lint": {
+    "rules": {
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.7.2/",
-    "preact": "https://esm.sh/preact@10.22.0",
-    "preact/": "https://esm.sh/preact@10.22.0/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "@preact-icons/common": "jsr:@preact-icons/common@^1.0.12",
+    "@preact-icons/tb": "jsr:@preact-icons/tb@^1.0.12",
+    "@radix-ui/react-slot": "npm:@radix-ui/react-slot@^1.1.0",
+    "@types/youtube": "npm:@types/youtube@^0.1.0",
+    "class-variance-authority": "npm:class-variance-authority@^0.7.0",
+    "clsx": "npm:clsx@^2.1.1",
+    "preact": "npm:preact@10.22.1",
+    "preact/hooks": "npm:preact@10.22.1/hooks",
+    "preact/jsx-runtim": "npm:preact@10.22.1/jsx-runtime",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "tailwindcss": "npm:tailwindcss@3.3.5",
-    "tailwindcss/": "npm:/tailwindcss@3.3.5/",
-    "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
-    "$std/": "https://deno.land/std@0.211.0/",
-    "$gfm": "https://deno.land/x/gfm@0.6.0/mod.ts",
-    "feed": "npm:feed@4.2.2",
-    "zod": "npm:zod@3.22.4",
-    "axios-web": "npm:axios@1.6.7",
-    "@/": "./"
+    "tailwind-merge": "npm:tailwind-merge@^2.5.4",
+    "tailwindcss": "npm:tailwindcss@3.4.1",
+    "tailwindcss/": "npm:/tailwindcss@3.4.1/",
+    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
+    "$std/": "https://deno.land/std@0.216.0/",
+    "fresh-youtube-player": "./vendor/deno.land/x/fresh_youtube_player@0.9.3/src/mod.ts",
+    "youtube/index.d.ts": "npm:@types/youtube@^0.1.0"
   },
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
-  "nodeModulesDir": true
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "nodeModulesDir": "auto"
 }

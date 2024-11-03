@@ -16,6 +16,5 @@
   },
   "css.customData": [
     ".vscode/tailwind.json"
-  ],
-  "deno.unstable": true
+  ]
 }

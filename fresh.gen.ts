@@ -4,46 +4,30 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
-import * as $api_random_uuid from "./routes/api/random-uuid.ts";
-import * as $games_index from "./routes/games/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-import * as $posts_slug_ from "./routes/posts/[slug].tsx";
-import * as $posts_feed from "./routes/posts/feed.ts";
-import * as $posts_index from "./routes/posts/index.tsx";
-import * as $search from "./routes/search.tsx";
-import * as $todo_listId_ from "./routes/todo/[listId].tsx";
-import * as $todo_index from "./routes/todo/index.tsx";
-import * as $Coutdown from "./islands/Coutdown.tsx";
-import * as $JSONFormatter from "./islands/JSONFormatter.tsx";
-import * as $TicTacToe2 from "./islands/TicTacToe2.tsx";
-import * as $TodoListView from "./islands/TodoListView.tsx";
+import * as $Counter from "./islands/Counter.tsx";
+import * as $Link from "./islands/Link.tsx";
+import * as $SiteHeader from "./islands/SiteHeader.tsx";
+import * as $Theater from "./islands/Theater.tsx";
+import * as $ThemeToggle from "./islands/ThemeToggle.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
-    "./routes/api/random-uuid.ts": $api_random_uuid,
-    "./routes/games/index.tsx": $games_index,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
-    "./routes/posts/[slug].tsx": $posts_slug_,
-    "./routes/posts/feed.ts": $posts_feed,
-    "./routes/posts/index.tsx": $posts_index,
-    "./routes/search.tsx": $search,
-    "./routes/todo/[listId].tsx": $todo_listId_,
-    "./routes/todo/index.tsx": $todo_index,
   },
   islands: {
-    "./islands/Coutdown.tsx": $Coutdown,
-    "./islands/JSONFormatter.tsx": $JSONFormatter,
-    "./islands/TicTacToe2.tsx": $TicTacToe2,
-    "./islands/TodoListView.tsx": $TodoListView,
+    "./islands/Counter.tsx": $Counter,
+    "./islands/Link.tsx": $Link,
+    "./islands/SiteHeader.tsx": $SiteHeader,
+    "./islands/Theater.tsx": $Theater,
+    "./islands/ThemeToggle.tsx": $ThemeToggle,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

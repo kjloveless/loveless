@@ -1,0 +1,150 @@
+{
+  "manifest": {
+    "/LICENSE": {
+      "size": 4170,
+      "checksum": "sha256-7617897cc7332e8746fdf12aebc48d90aa737df2f2f450cc3fbab0ee8dca24db"
+    },
+    "/mod.ts": {
+      "size": 1308,
+      "checksum": "sha256-b30083e8820540e44d0404cef6cd5d6bb0ca23d1fc1b1924b7a2971637b80d4a"
+    },
+    "/lib/iconContext.ts": {
+      "size": 844,
+      "checksum": "sha256-3ee5fc06c066b12c83ca66f571f29bce0f0901011d2f2d6c8e4fcaa8d126dd51"
+    },
+    "/deno.json": {
+      "size": 1263,
+      "checksum": "sha256-09dfd4738d9583e22cf364f026ada8424a3488db23a8bd1cfc6c3c1eb0ec02d0"
+    },
+    "/lib/iconBase.tsx": {
+      "size": 3419,
+      "checksum": "sha256-f8b70c1ce8d383a84aa0de04fafe90a25d0d0ba48e2e691909a6d5594f92ec42"
+    },
+    "/README.md": {
+      "size": 1986,
+      "checksum": "sha256-fe41e7194b5de34b37f40ff9bf96e39905d353789b1b8dc6868f1f946a109734"
+    }
+  },
+  "moduleGraph2": {
+    "/lib/iconBase.tsx": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:preact@^10.22.1",
+          "specifierRange": [
+            [
+              0,
+              30
+            ],
+            [
+              0,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:preact@^10.22.1",
+          "specifierRange": [
+            [
+              1,
+              51
+            ],
+            [
+              1,
+              72
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./iconContext.ts",
+          "specifierRange": [
+            [
+              2,
+              53
+            ],
+            [
+              2,
+              71
+            ]
+          ]
+        }
+      ]
+    },
+    "/mod.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./lib/iconBase.tsx",
+          "specifierRange": [
+            [
+              51,
+              69
+            ],
+            [
+              51,
+              89
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./lib/iconContext.ts",
+          "specifierRange": [
+            [
+              52,
+              69
+            ],
+            [
+              52,
+              91
+            ]
+          ]
+        }
+      ]
+    },
+    "/lib/iconContext.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:preact@^10.22.1",
+          "specifierRange": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:preact@^10.22.1",
+          "specifierRange": [
+            [
+              1,
+              25
+            ],
+            [
+              1,
+              46
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "exports": {
+    ".": "./mod.ts"
+  }
+}

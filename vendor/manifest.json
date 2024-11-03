@@ -1,0 +1,48 @@
+{
+  "folders": {
+    "https://esm.sh/*@preact/": "esm.sh/#_@preact_14611",
+    "https://esm.sh/v135/@babel/helper-validator-identifier@7.22.20/": "esm.sh/v135/@babel/#helper-validator-ide_a72a5",
+    "https://esm.sh/v135/@preact/signals-core@1.5.1/X-ZS8q/": "esm.sh/v135/@preact/signals-core@1.5.1/#x-zs8q_780fd",
+    "https://esm.sh/v135/@preact/signals@1.2.2/X-ZS8q/": "esm.sh/v135/@preact/signals@1.2.2/#x-zs8q_780fd",
+    "https://esm.sh/v135/@types/babel__helper-validator-identifier@7.15.2/": "esm.sh/v135/@types/#babel__helper-valida_6a45d",
+    "https://esm.sh/v135/@types/babel__helper-validator-identifier@~7/": "esm.sh/v135/@types/#babel__helper-valida_6bdbc",
+    "https://esm.sh/v135/preact-render-to-string@6.3.1/X-ZS8q/": "esm.sh/v135/preact-render-to-string@6.3.1/#x-zs8q_780fd"
+  },
+  "modules": {
+    "https://deno.land/x/fresh@1.7.3/src/runtime/Partial.tsx": {},
+    "https://deno.land/x/fresh_youtube_player@0.9.3/src/YouTubePlayer.tsx": {},
+    "https://deno.land/x/ts_morph@21.0.1/common/DenoRuntime.ts": {},
+    "https://esm.sh/*@preact/signals-core@1.5.1": {
+      "headers": {
+        "content-type": "application/javascript; charset=utf-8",
+        "x-typescript-types": "https://esm.sh/v135/@preact/signals-core@1.5.1/X-ZS8q/dist/signals-core.d.ts"
+      }
+    },
+    "https://esm.sh/*@preact/signals@1.2.2": {
+      "headers": {
+        "content-type": "application/javascript; charset=utf-8",
+        "x-typescript-types": "https://esm.sh/v135/@preact/signals@1.2.2/X-ZS8q/dist/signals.d.ts"
+      }
+    },
+    "https://esm.sh/*preact-render-to-string@6.3.1": {
+      "headers": {
+        "content-type": "application/javascript; charset=utf-8",
+        "x-typescript-types": "https://esm.sh/v135/preact-render-to-string@6.3.1/X-ZS8q/src/index.d.ts"
+      }
+    },
+    "https://esm.sh/@babel/helper-validator-identifier@7.22.20": {
+      "headers": {
+        "content-type": "application/javascript; charset=utf-8",
+        "x-typescript-types": "https://esm.sh/v135/@types/babel__helper-validator-identifier@~7/index.d.ts"
+      }
+    },
+    "https://esm.sh/v135/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs": {},
+    "https://esm.sh/v135/@types/babel__helper-validator-identifier@~7/index.d.ts": {
+      "headers": {
+        "location": "https://esm.sh/v135/@types/babel__helper-validator-identifier@7.15.2/index.d.ts"
+      }
+    },
+    "https://jsr.io/@preact-icons/common/1.0.12/lib/iconBase.tsx": {},
+    "https://jsr.io/@preact-icons/common/1.0.12/lib/iconContext.ts": {}
+  }
+}
