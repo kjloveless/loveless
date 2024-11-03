@@ -11,7 +11,7 @@ export function getDomain(hostname: string) {
     return { domain: hostname, subdomain: undefined };
   }
 
-  const domain = `${domainParts[domainParts.length - 1]}
+  const domain = `${domainParts[domainParts.length - 2]}
   ${domainParts[domainParts.length]}`;
   const subdomain = hostname.split(domain)[0];
   return { domain, subdomain };
