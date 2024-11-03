@@ -1,7 +1,10 @@
 import { useCallback, useRef } from "preact/hooks";
 import { PlayerHandler, YouTubePlayer } from "fresh-youtube-player";
+import { JSX } from "preact";
 
-export default function Theater() {
+export default function Theater(
+  { className }: JSX.HTMLAttributes<HTMLElement>,
+) {
   const playerHandler = useRef<PlayerHandler>();
 
   const onPlayerReady = useCallback(() => {
@@ -9,7 +12,7 @@ export default function Theater() {
   }, []);
 
   return (
-    <div>
+    <div className={className}>
       <YouTubePlayer
         width={450}
         height={390}
