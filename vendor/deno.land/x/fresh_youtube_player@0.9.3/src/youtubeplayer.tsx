@@ -68,10 +68,10 @@ export function YouTubePlayer(props: YouTubePlayerProps) {
   });
 
   useEffect(() => {
-    if (!globalThis.window.YT || !globalThis.window.YT.Player) {
-      const id = setInterval(() => setCountPrepare(countPrepare + 1), 100);
-      return () => clearInterval(id);
-    }
+    // if (!globalThis.window.YT || !globalThis.window.YT.Player) {
+    //   const id = setInterval(() => setCountPrepare(countPrepare + 1), 100);
+    //   return () => clearInterval(id);
+    // }
 
     if (!player.current) {
       console.log(`${props.videoId}: Setting YouTube Player`);
@@ -92,7 +92,7 @@ export function YouTubePlayer(props: YouTubePlayerProps) {
     }
 
     if (props.onPlayerReady) props.onPlayerReady();
-  }, [countPrepare]);
+  }, []);
 
   return (
     <div>
@@ -102,7 +102,6 @@ export function YouTubePlayer(props: YouTubePlayerProps) {
           style={{ height: `${props.height}px`, width: `${props.width}px` }}
         />
       )}
-      {props.onPlayerReady()}
     </div>
   );
 }

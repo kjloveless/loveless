@@ -11,7 +11,9 @@ export default function Home() {
     <div class="px-4 py-8 mx-auto">
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
         <TbHeartBroken className={"size-16"} />
-        <h1 class="text-4xl font-bold">welcome to my site, look around</h1>
+        <h1 class="text-center text-4xl font-bold">
+          welcome to my site, look around
+        </h1>
         {/* <Counter count={count} /> */}
         <Theater />
       </div>
