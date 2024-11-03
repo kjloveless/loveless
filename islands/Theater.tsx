@@ -14,7 +14,7 @@ export default function Theater() {
         width={450}
         height={390}
         videoId={"ynGDM2D1Z48"}
-        playerVars={{ mute: 1 }}
+        playerVars={{ mute: 0 }}
         playerHandler={playerHandler}
         onPlayerReady={onPlayerReady}
       />
