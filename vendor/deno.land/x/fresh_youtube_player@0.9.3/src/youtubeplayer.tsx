@@ -102,6 +102,7 @@ export function YouTubePlayer(props: YouTubePlayerProps) {
           style={{ height: `${props.height}px`, width: `${props.width}px` }}
         />
       )}
+      {props.onPlayerReady()}
     </div>
   );
 }
