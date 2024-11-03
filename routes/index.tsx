@@ -15,7 +15,7 @@ export default function Home() {
           welcome to my site, look around
         </h1>
         {/* <Counter count={count} /> */}
-        <Theater className="flex justify-center m-8 size-16 md:size-8" />
+        {/* <Theater className="flex justify-center m-8 size-16 md:size-8" /> */}
       </div>
     </div>
   );
