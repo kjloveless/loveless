@@ -11,7 +11,7 @@ export default function Theater() {
   return (
     <div>
       <YouTubePlayer
-        width={640}
+        width={450}
         height={390}
         videoId={"ynGDM2D1Z48"}
         playerVars={{ mute: 1 }}
