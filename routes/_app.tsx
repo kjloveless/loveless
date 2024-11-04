@@ -13,7 +13,7 @@ export default function App({ Component, url }: PageProps) {
         <title>{url.hostname}</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body>
+      <body class="flex flex-col min-h-screen grow">
         <Header url={url} />
         <Component />
       </body>

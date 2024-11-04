@@ -29,6 +29,7 @@
     "class-variance-authority": "npm:class-variance-authority@^0.7.0",
     "clsx": "npm:clsx@^2.1.1",
     "preact": "npm:preact@10.22.1",
+    "preact-lazy": "npm:preact-lazy@^0.0.3",
     "preact/hooks": "npm:preact@10.22.1/hooks",
     "preact/jsx-runtim": "npm:preact@10.22.1/jsx-runtime",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",

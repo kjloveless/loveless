@@ -2,9 +2,9 @@ import { useCallback, useRef } from "preact/hooks";
 import { PlayerHandler, YouTubePlayer } from "fresh-youtube-player";
 import { JSX } from "preact";
 
-export default function Theater(
-  { className }: JSX.HTMLAttributes<HTMLElement>,
-) {
+import lazy from "preact-lazy";
+
+function Theater({ className }: JSX.HTMLAttributes<HTMLElement>) {
   const playerHandler = useRef<PlayerHandler>();
 
   const onPlayerReady = useCallback(() => {
@@ -23,4 +23,10 @@ export default function Theater(
       />
     </div>
   );
+}
+
+export default function LazyTheater(
+  { className }: JSX.HTMLAttributes<HTMLElement>,
+) {
+  return lazy(() => <Theater className={className} />, <div>loading...</div>);
 }
