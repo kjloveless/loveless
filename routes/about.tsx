@@ -10,11 +10,11 @@ export default function About() {
           software developer. dad.
         </h1>
         <h4 class="text-center text-2xl font-bold">
-          i like systems and web programming. big zig and deno fan. i like
-          music.
+          i like systems and web programming. big zig and deno fan.
         </h4>
         <h2 class="text-center text-xl font-bold">
-          i'm learning zig and golang. brushing up on c/c++.
+          i'm learning zig and golang. brushing up on c/c++. computer security
+          enthusiast.
         </h2>
       </div>
       <p class="items-start text-l font-bold">
