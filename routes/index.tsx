@@ -20,10 +20,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex shrink-0 mt-auto py-4 justify-center align-bottom bottom-0">
-        <img
-          src="https://tryhackme-badges.s3.amazonaws.com/damnloveless.png"
-          alt="THM Profile Badge"
-        />
+        <p>
+          reach me at: <a href="mailto:hello@turn.off.ai">hello@turn.off.ai</a>
+        </p>
       </div>
     </>
   );
