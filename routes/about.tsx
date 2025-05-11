@@ -38,7 +38,7 @@ export default function About() {
       </p>
       <div className="flex shrink-0 mt-auto py-4 justify-center align-bottom bottom-0">
         <p>
-          reach me at: <a href="mailto:hello@turn.off.ai">hello@turn.off.ai</a>
+          reach me at: <a href="mailto:kyle@loveless.dev">hello@turn.off.ai</a>
         </p>
       </div>
     </div>
